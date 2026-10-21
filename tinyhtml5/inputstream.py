@@ -179,7 +179,8 @@ class HTMLUnicodeInputStream:
             if not opposite:
                 regex = f"^{regex}"
             regex = re.compile(f"[{regex}]+")
-            characters = characters_until_regex[(characters, opposite)] = regex
+            characters_until_regex[(characters, opposite)] = regex
+            characters = regex
 
         result = []
 
