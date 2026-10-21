@@ -1,5 +1,7 @@
 from collections import defaultdict
-from os import linesep
+
+# Committed conformance fixtures use LF independently of the host platform.
+linesep = "\n"
 
 
 class Data:

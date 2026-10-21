@@ -44,7 +44,8 @@ def test_chars_until_reuses_compilation_across_streams(
     assert len(compiled_patterns) == 1
 
 
-def test_chars_until_keeps_character_sets_and_opposite_modes_separate(compiled_patterns):
+def test_chars_until_keeps_character_sets_and_opposite_modes_separate(
+        compiled_patterns):
     cases = [
         ("x", False, "aax", "aa", "x"),
         ("y", False, "bby", "bb", "y"),
